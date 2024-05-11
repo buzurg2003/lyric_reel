@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:lyric_reel/navigation/navigation_drawer_widget.dart';
 import 'package:lyric_reel/pages/home_page/bottom_navigation_home_page.dart';
 import 'package:lyric_reel/pages/home_page/search_bar_delegate.dart';
 import 'package:lyric_reel/pages/messages_page/messages_home_page.dart';
@@ -48,7 +47,6 @@ class _MyHomePageState extends State<HomePage> {
           ),
         ],
       ),
-      drawer: NavigationDrawerWidget(),
       body: _buildPage(currentPageIndex),
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentPageIndex,
