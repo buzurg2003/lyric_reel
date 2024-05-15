@@ -73,16 +73,15 @@ class _MyHomePageState extends State<HomePage> {
           });
         },
       ),
-      floatingActionButton: AnimatedSwitcher(
-        duration: Duration(milliseconds: 10),
-        child: currentPageIndex == 0
-            ? FloatingActionButton(
-          key: Key('home'),
-          child: Icon(Icons.camera_alt),
-          onPressed: () {},
-        )
-            : null,
-      ),
+      // floatingActionButton: AnimatedSwitcher(
+      //   duration: Duration(milliseconds: 10),
+      //   child: currentPageIndex == 0
+      //       ? FloatingActionButton(
+      //     key: Key('home'),
+      //     child: Icon(Icons.camera_alt),
+      //     onPressed: () {},
+      //   ) : null,
+      // ),
     );
   }
 
