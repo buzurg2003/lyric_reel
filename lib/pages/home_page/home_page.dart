@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:lyric_reel/pages/home_page/bottom_navigation_home_page.dart';
+import 'package:lyric_reel/pages/home_page/posts_page.dart';
 import 'package:lyric_reel/pages/home_page/search_bar_delegate.dart';
 import 'package:lyric_reel/pages/messages_page/messages_home_page.dart';
 import 'package:lyric_reel/pages/notifications_page/notifications_page,dart.dart';
@@ -26,7 +26,10 @@ class _MyHomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              showSearch(context: context, delegate: SearchBarDelegate());
+              showSearch(
+                context: context,
+                delegate: SearchBarDelegate()
+              );
             },
           ),
           PopupMenuButton(
@@ -73,15 +76,6 @@ class _MyHomePageState extends State<HomePage> {
           });
         },
       ),
-      // floatingActionButton: AnimatedSwitcher(
-      //   duration: Duration(milliseconds: 10),
-      //   child: currentPageIndex == 0
-      //       ? FloatingActionButton(
-      //     key: Key('home'),
-      //     child: Icon(Icons.camera_alt),
-      //     onPressed: () {},
-      //   ) : null,
-      // ),
     );
   }
 
