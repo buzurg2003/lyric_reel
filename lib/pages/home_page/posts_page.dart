@@ -13,7 +13,7 @@ class _BottomNavigationHomePageState extends State<BottomNavigationHomePage> {
   @override
   Widget build(BuildContext context) {
     return PostTemplate(
-      username: 'programmer_2003',
+      username: 'username',
       videoDescription: 'tiktok ui',
       numberOfLikes: '1.2M',
       numberOfComments: '1850',
